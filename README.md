@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) project whose purpose is to display an editable list using a mock REST API.
 
 ## Getting Started
 
@@ -17,7 +17,8 @@ Open a terminal window and run
 npm run mock-api
 ```
 
-The mock API will be running on [http://localhost:3001](http://localhost:3001)
+The mock API will be running on port 3001 and the path name reflects the structure of the data in /db.json.
+Try ```curl http://localhost:3001/posts/1``` from the command line.
 
 ### Start the development server
 
@@ -25,11 +26,9 @@ Open a second terminal window and run
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The UI will be viewable in your browser at [http://localhost:3000](http://localhost:3000).
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
