@@ -2,7 +2,26 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+Fork the github project at [https://github.com/campbelg/oclc-ui-project](https://github.com/campbelg/oclc-ui-project), clone it locally and build it.
+
+```bash
+git clone [the URI of your forked Github Repository]
+npm install
+```
+
+### Start the mock json server
+
+Open a terminal window and run
+
+```bash
+npm run mock-api
+```
+
+The mock API will be running on [http://localhost:3001](http://localhost:3001)
+
+### Start the development server
+
+Open a second terminal window and run
 
 ```bash
 npm run dev
