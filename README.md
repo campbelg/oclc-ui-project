@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-Fork the github project at [https://github.com/campbelg/oclc-ui-project](https://github.com/campbelg/oclc-ui-project), clone it locally and build it.
+Fork the github project at [https://github.com/campbelg/oclc-ui-project](https://github.com/campbelg/oclc-ui-project) into your github repository. From the command line
 
 ```bash
 git clone [the URI of your forked Github Repository]
