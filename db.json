@@ -1,9 +1,22 @@
 {
-  "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
-  ],
-  "profile": { "name": "typicode" }
+  "institutions": [
+    {
+      "id": 1,
+      "name": "University of Nebraska at Hoople",
+      "link": "https://libraries.unl.edu/",
+      "description": "The University of Nebraska system is the public university system in the U.S. state of Nebraska. Founded in 1869 with one campus in Lincoln, the system has four university campuses and operates a two-year technical agriculture college and a high school."
+    },
+    {
+      "id": 2,
+      "name": "University of Iowa",
+      "link": "https://www.lib.uiowa.edu/",
+      "description": "Located on an urban 1,880 acre campus on the banks of the Iowa River, the University of Iowa is classified among \"R1: Doctoral Universities – Very high research activity\". The university is best known for its programs in health care, law, and the fine arts, with programs ranking among the top 25 nationally in those areas.[6][7] The university was the original developer of the Master of Fine Arts degree and it operates the Iowa Writer's Workshop, which has produced 17 of the university's 46 Pulitzer Prize winners.[8][9] Iowa is a member of the Association of American Universities, the Universities Research Association, and the Big Ten Academic Alliance."
+    },
+    {
+      "id": 3,
+      "name": "Rutgers University",
+      "link": "https://www.libraries.rutgers.edu/",
+      "description": "Rutgers has three campuses located throughout New Jersey: New Brunswick campus in New Brunswick and adjacent Piscataway, the Newark campus, and the Camden campus. The university has additional facilities elsewhere in the state. Instruction is offered by 9,000 faculty members in 175 academic departments to over 45,000 undergraduate students and more than 20,000 graduate and professional students."
+    }
+  ]
 }
