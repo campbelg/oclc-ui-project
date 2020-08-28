@@ -88,9 +88,32 @@ curl -X PUT http://localhost:3000/api/institution/2 \
 curl -X DELETE http://localhost:3000/api/institution/2
 ```
 
-## Creating a Component
+## Your Task
 
-TODO - explain the task here?
+The goal of this exercise is to build a simple interface that is based on the mock API for institutions. We would like to see
+all the CRUD capabilities of the API utilized in some way. This means your interface should support creating new records, displaying them, editing them,
+and deleting them. The user experience of how you accomplish this is up to you, but we will require a list view (see [Provided materials](#Provided materials) for more information).
+
+### General parameters
+This task is designed to be straight-forward but non-trivial. We are hoping that it should take no more than a handful of hours to complete. 
+
+* Fetch and render all the institution records.
+* For each record, display the data about that record in an organized way. Our component knows how to render only the `name` currently.
+* Implement the remaining behaviors using the API: 
+  * Create a record and subsequently display it
+  * Edit at least one data field in the record
+  * Delete a record
+
+### Provided materials
+We've provided some components for you to get started with. `InstitutionRecordList` is the component that should be responsible for
+fetching all the records and passing those to `InstitutionCard` for it to render.
+
+Next.js polyfills `fetch` in the browser for you, so you should utilize this. You can refer to their [documentation on supported features](https://nextjs.org/docs/basic-features/supported-browsers-features), or [MDN's fetch documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) for reference. 
+
+### Guidance
+* Please refrain from adding additional dependencies to the project.
+* A functional and clean UI is better than a pretty one for this exercise. You are free to add or change styles as you see fit, but not at the expense of features. Also, please refrain from using an off-the-shelf library like Bootstrap or Material.
+* Please keep the structure of the project intact. You are free to add whatever components you want to the `components` directory, but please avoid moving things around unless you are able to justify why.
 
 ## Reference
 
@@ -103,4 +126,4 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 * [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 * [Mock Photos Documentation](https://picsum.photos/)
-* [List of Publically Available APIs](https://github.com/public-apis/public-apis)
+* [List of Publicly Available APIs](https://github.com/public-apis/public-apis)
