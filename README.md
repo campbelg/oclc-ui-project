@@ -37,7 +37,7 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 The React based [next.js](https://nextjs.org/docs) framework runs on a local development server and serves pages to your browser on port 3000. The various pages and components are in the ```/pages``` folder. The ```/pages/api``` folder contains code that runs on the local development server to talk to API's. Separately we are running a [json-server](https://github.com/typicode/json-server) on port 3001 to mock out a RESTful API. We also have an API to get mock images from [Lorem Picsum](https://picsum.photos/).
 
-## Working with the mock API fro inside the Application
+## Working with the mock API from inside the Application
 
 We wrote a simple interface layer so that the API running on port 3001 is available on port 3000, same as the app (to avoid cross site scripting issues). You can see the code in the ```src/pages/api/institution``` folder.
 
@@ -73,9 +73,30 @@ curl -X PUT http://localhost:3000/api/institution/2 \
 curl -X DELETE http://localhost:3000/api/institution/2
 ```
 
-## Creating a Component
+## Your Task
 
-TODO - explain the task here?
+The goal of this exercise is to build a simple interface that is based on the mock API for institutions. We would like to see
+all the CRUD capabilities of the API utilized in some way. This means your interface should support creating new records, displaying them, editing them,
+and deleting them. The user experience of how you accomplish this is up to you, but we will require a list view (see [Provided materials](#Provided materials) for more information).
+
+### General parameters
+This task is designed to be straight-forward but non-trivial. We are hoping that it should take no more than a handful of hours to complete. 
+
+* Fetch and render all the institution records.
+* For each record, display the data about that record in an organized way. Our component knows how to render only the `name` currently.
+* Implement the remaining behaviors using the API: 
+  * Create a record and subsequently display it
+  * Edit at least one data field in the record
+  * Delete a record
+
+### Provided materials
+We've provided some components for you to get started with. `InstitutionRecordList` is the component that should be responsible for
+fetching all the records and passing those to `InstitutionCard` for it to render.
+
+### Guidance
+* Please refrain from adding additional dependencies to the project.
+* A functional and clean UI is better than a pretty one for this exercise. You are free to add or change styles as you see fit, but not at the expense of features. Also, please refrain from using an off-the-shelf library like Bootstrap or Material.
+* Please keep the structure of the project intact. You are free to add whatever components you want to the `components` directory, but please avoid moving things around unless you are able to justify why.
 
 ## Reference
 
@@ -88,4 +109,4 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 * [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 * [Mock Photos Documentation](https://picsum.photos/)
-* [List of Publically Available APIs](https://github.com/public-apis/public-apis)
+* [List of Publicly Available APIs](https://github.com/public-apis/public-apis)
