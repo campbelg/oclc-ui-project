@@ -35,11 +35,26 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 ## How the Project Works
 
-The React based [next.js](https://nextjs.org/docs) framework runs on a local development server and serves pages to your browser on port 3000. The various pages and components are in the ```/pages``` folder. The ```/pages/api``` folder contains code that runs on the local development server to talk to API's. Separately we are running a [json-server](https://github.com/typicode/json-server) on port 3001 to mock out a RESTful API. We also have an API to get mock images from [Lorem Picsum](https://picsum.photos/).
+The React based [next.js](https://nextjs.org/docs) framework runs on a local development server and serves pages to your browser on port 3000. The various pages and components are in the ```/pages``` folder. The ```/pages/api``` folder contains code that runs on the local development server to talk to API's. Separately we are running a [json-server](https://github.com/typicode/json-server) on port 3001 to mock out a RESTful API. You can also get mock images from [Lorem Picsum](https://picsum.photos/) by embedding links to directly in image tags.
 
-## Working with the mock API fro inside the Application
+```text
+                        +-------------+
+      +------------+    | next.js     |
+      | Client Web |    | development |
+      | Browser    |<---+ server on   |
+      +------------+    | port 3000   |
+                        +-------------+
+                               ^
+                               |
+                        +------+------+
+                        | mock API on |
+                        | port 3001   |
+                        +-------------+
+```
 
-We wrote a simple interface layer so that the API running on port 3001 is available on port 3000, same as the app (to avoid cross site scripting issues). You can see the code in the ```src/pages/api/institution``` folder.
+## Working with the mock API from inside the Application
+
+We wrote a simple interface layer so that the API running on port 3001 that mocks an external API is available on port 3000, same as the app (to avoid cross site scripting issues). You can see the code in the ```src/pages/api/institution``` folder.
 
 These simple curl operations demonstrate how records may be RESTfully read, created, updated and deleted from the command line. Your component can access these endpoints in a similar way.
 
