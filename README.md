@@ -93,6 +93,8 @@ This task is designed to be straight-forward but non-trivial. We are hoping that
 We've provided some components for you to get started with. `InstitutionRecordList` is the component that should be responsible for
 fetching all the records and passing those to `InstitutionCard` for it to render.
 
+Next.js polyfills `fetch` in the browser for you, so you should utilize this. You can refer to their [documentation on supported features](https://nextjs.org/docs/basic-features/supported-browsers-features), or [MDN's fetch documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) for reference. 
+
 ### Guidance
 * Please refrain from adding additional dependencies to the project.
 * A functional and clean UI is better than a pretty one for this exercise. You are free to add or change styles as you see fit, but not at the expense of features. Also, please refrain from using an off-the-shelf library like Bootstrap or Material.
