@@ -92,7 +92,7 @@ curl -X DELETE http://localhost:3000/api/institution/2
 
 The goal of this exercise is to build a simple interface that is based on the mock API for institutions. We would like to see
 all the CRUD capabilities of the API utilized in some way. This means your interface should support creating new records, displaying them, editing them,
-and deleting them. The user experience of how you accomplish this is up to you, but we will require a list view (see [Provided materials](#Provided materials) for more information).
+and deleting them. The user experience of how you accomplish this is up to you, but we will require a list view (see [Provided materials](#provided-materials) for more information).
 
 ### General parameters
 This task is designed to be straight-forward but non-trivial. We are hoping that it should take no more than a handful of hours to complete. 
